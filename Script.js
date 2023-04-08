@@ -17,6 +17,23 @@ function myFunction(){
     }
     
 };
-function submitmsg(){
-    alert('Thank You For Submitting Your Responce');
+
+function validtion(){
+    // Name Validtion
+    var f=document.getElementById("fname").value;
+    var reg= /^[A-Za-z ]+$/;
+    if(f.trim()==""){
+        document.getElementById("error").innerHTML="Please Insert A Name";
+    }
+    else if(!reg.test(f)){
+        document.getElementById("error").innerHTML="Please Enter Valid Name";
+    }
+    else {
+        document.getElementById("error").innerHTML="";
+    }
 }
+
+
+// function submitmsg(){
+//     alert('Thank You For Submitting Your Responce');
+// }
