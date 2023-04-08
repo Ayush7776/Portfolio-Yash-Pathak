@@ -27,7 +27,7 @@
         </div>
         <div class="nav">
             <ul class="nclick">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Projects.html">Projects</a></li>
@@ -66,21 +66,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="form">
-                <h5>Name</h5>
-                <input type="text">
-            </div>
-            <div class="form">
-                <h5>Email</h5>
-                <input type="text">
-            </div>
-            <div class="form">
-                <h5>Description</h5>
-                <textarea rows="4" cols="10" ></textarea>
-            </div>
-            <div class="form">
-                <button class="btn" onclick="submitmsg()">Send Massage</button>
-            </div>
+            <h4 id="error"></h4>
+            <form target="_blank" action="https://formsubmit.co/ayushpathak7776@gmail.com" method="POST">
+                <div class="form">
+                    <h5>Name</h5>
+                    <input type="text" id="fname" type="hidden" name="name" required>
+                </div>
+                <div class="form">
+                    <h5>Email</h5>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form">
+                    <h5>Description</h5>
+                    <textarea rows="2" cols="10" type="hidden" name="message"
+                        required></textarea>
+                </div>
+                <div class="form">
+                    <button type="submit" class="btn" onclick="validtion()">Send Massage</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="Script.js"></script>
