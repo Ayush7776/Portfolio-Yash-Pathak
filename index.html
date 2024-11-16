@@ -1,66 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Edu+TAS+Beginner:wght@500&family=Pacifico&family=Poppins:wght@300&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="yplogo.png">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <title>My Website</title>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio- Yash Pathak</title>
+
+   
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
-<body>
-    <div class="head photo animate__animated animate__backInDown">
-        <div class="hello">
-            <h2>Hello</h2>
-        </div>
-        <div class="nav">
-            <ul class="nclick">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="burger">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
-    </div>
-    <div class="middle">
-        <div class="photo animate__animated animate__backInLeft">
-            <img src="yash2.jpeg" alt="My Photo">
-        </div>
-        <div class="sec2 photo animate__animated animate__backInRight">
 
-            <h1 class="name">Yash Pathak</h1>
-            <span class="line"></span>
-            <h2>
-                <h2 href="" class="typewrite" data-period="2000" data-type='[ "I am a Creative Developer.", "I am a Programmer.", "I Love to Design." ]'>
-                    <span class="wrap">|</span>
-                </h2>
-            </h2>
-            <button class="btn" onclick="document.location='YASH PATHAK.pdf'"><a>Download CV</a></button>
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
-    <script src="Script.js">
-    </script>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <p style="margin: auto;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 35px;color: white;">Portfolio</p>
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#works">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
+                        <h1 class="s-intro__content-title">
+                        I'm Yash Pathak <br>
+                        a full stack engineer <br>
+                        base in Somewhere.
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                <li>
+                    <a href="https://github.com/Ayush7776?tab=repositories" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yashpathak07/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg>
+                    </a>
+                </li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/intro.jpeg" srcset="images/intro.jpeg 1x, 2x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="/YASH PATHAK.pdf">Get My CV</a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                        Software Developer with proven skills in Java, JavaScript, Python and Web
+                        Development. Focused on keeping a tight architecture in order to minimize errors
+                        and bugs. Successfully designed and built several useful apps. Offering a strong
+                        foundation in Software Development and the newest knowledge within database
+                        management And Problem-Solving.                  
+                    </p>
+
+                    
+
+                    <div class="grid-list-items s-about__blocks">
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Education</h4>
+                            <ul class="s-about__list">
+                                <li>
+                                    North Maharshtra University
+                                    <span>Master of Computer Applications | 2022 - 2024</span>
+                                </li>
+                                <li>
+                                    Agrwal Institute Of Manegement
+                                    <span>Bachelor of Computer Applications| 2019 - 2022</span>
+                                </li>
+                                <li>
+                                   Rashtriya Collage,Chalisgaon
+                                    <span>Higher Secondary Certificate | 2018 - 2019</span>
+                                </li>
+                                <li>
+                                    Madhyamik Vidyalay,Talegaon
+                                    <span>Secondary School Certificate | 2016 - 2017</span>
+                                </li>
+                                
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Skills</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    <a href="#0">
+                                        Programming Skills
+                                        <span>C, C++, Python, Java</span>
+                                    </a>                                        
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Web Development
+                                        <span>Html,CSS,JS,Django,Node JS,REST APIS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Frameworks
+                                        <span>Boot Strap, React, Next.js, Material Ui Ux</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Database And Hosting
+                                        <span>MySQL, MongoDB, Git, GitHub</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+                        
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Work Experience</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    Django Developer : <span> Responsible for creating and
+                                        maintaining web applications using the
+                                        Django framework and Python code.</span>
+                                    
+                                </li>
+                                <li>
+                                    Python Django : <span>Successfully Completed
+                                    Full Stack Python Django With CRUD
+                                    Operation Course By Learn Vern On 5th
+                                    April,2023</span>
+                                    
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                    </div> <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Selected Works.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="images/notes.png" class="entry__link glightbox" data-glightbox="title: iNoteBook; description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="images/notescover.jpg" srcset="images/notescover.jpg 1x," alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">iNotebook App</h4>
+                            <div class="entry__cat">Full Stack Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-01">
+                        <p>Front end - ReactJS, Material UI</p>
+                        <p>Backend : Django, PostgreSQL, SaaS</p>
+                        <p>
+                            Features : User Authentication and Authorization, CRUD,
+                            Attachments, Version Control, Search and Navigation, Admin
+                            Panel, Role-Based Permissions, Customizable Themes,
+                            Notifications And Toasts, Animations
+                        <a href="https://github.com/Ayush7776/iNotebook">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Gizmocover.png" class="entry__link glightbox" data-glightbox="title: Gizmo; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/gizmocover.jpg" srcset="images/gizmocover.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Gizmo</h4>
+                            <div class="entry__cat">Full Stack Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>Frontend- HTML, CSS, Bootstrap, JavaScript</p>
+                        <p>Backend - Django, SQLite</p>
+                        <p>
+                            It includes Four Pages of About, Shop, Services, Contact us.
+                            It have a shopping Cart facility, where You can add some
+                            products It will generate total amount you have to pay.
+                            it is generate proper payment getaway window
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/image.png" class="entry__link glightbox" data-glightbox="title: ImageScale; description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="images/image.jpg" srcset="images/image.jpg 1x, images/folio/lamp@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">ImageScale</h4>
+                            <div class="entry__cat">Full Stack Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-05">
+                        <p>Backend : Django, MY SQL</p>
+                        <p>
+                            ImageScale Is A Project to upload images in the database. The process
+                            involves compressing and converting the images to the webp format.
+                            In This Created two account types admin and user, and use jwt
+                            authentication. User can see only his images and upload more images,
+                            admin can see all users and their images uploaded and edit and delete.
+                        <a href="https://github.com/Ayush7776/ImageScaller">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                
+
+                <div class="column entry">
+                    <a href="images/jobya.png" class="entry__link glightbox" data-glightbox="title: WoodCraft; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/jobcover.jpg" srcset="images/jobcover.jpg 1x, images/folio/woodcraft@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Job Portal</h4>
+                            <div class="entry__cat">Full Stack Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>Frontend- HTML, CSS, JavaScript, Bootstrap</p>
+                        <p>Backend - Django, MySQL</p>
+                        <p>
+                            website that provides a user-friendly interface for job seekers
+                            to search and apply for jobs, and for employers to post job
+                            openings and review applications. They enable recruiters to
+                            source, track, onboard and analyst new recruits, simplifying
+                            the recruitment process. Recruiters using job portals find
+                            candidates easily by: Customizing questions. Setting filters
+                            based on credentials.
+                        <a href="https://github.com/Ayush7776/Jobya">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+                
+                <div class="column entry">
+                    <a href="images/wether.png" class="entry__link glightbox" data-glightbox="title: Weather App; description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="images/wether.jpg" srcset="images/wether.jpg" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Weather App</h4>
+                            <div class="entry__cat">Frontend Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>Front end - Rect JS</p>
+                        <p>Rest ApiName - Rapid API</p>
+                        <p>
+                            Our weather app used APIs to retrieve weather data for all
+                            cities and countries You’ll get many weather details in this
+                            app like temperature in Celsius, weather conditions, location,
+                            feels like, and humidity.
+                        <a href="https://github.com/Ayush7776/Wether_app">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+
+                <div class="column entry">
+                    <a href="images/news.png" class="entry__link glightbox" data-glightbox="title: NewsMedia; description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="images/newscover.jpg" srcset="images/newscover.jpg 1x, 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">NewsMedia</h4>
+                            <div class="entry__cat">Frontend Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>Frontend : ReactJS,NewsAPI</p>
+                        <p>
+                            A news portal is an access point to news; This is generally thought of as a Internet connection to a news source but the definition of a “Portal” would include a newspaper, magazine or any other access to news.
+                        <a href="https://github.com/Ayush7776/Newsmedia">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry --> 
+
+            </div> <!-- folio entries -->
+
+
+            
+
+        </section> <!-- end s-works --> 
+
+
+        <!-- # numbers
+        ================================================== -->
+        
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+                    Yash Vijay Pathak,Talegaon,Hirapur Rode,Chalisgaon,Jalgaon, Maharashtra 424108
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.linkedin.com/in/yashpathak07/">LinkdIn</a></li>
+                                <li><a href="https://github.com/Ayush7776?tab=repositories">GitHub</a></li>
+                                </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:yashpathak7776@gmail.com">yashpathak7776@gmail.com</a></li>
+                                <li><a href="tel:+917776087318">+917776087318</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:yashpathak7776@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="/YASH PATHAK.pdf" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
+                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/yashpathak07/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Ayush7776?tab=repositories" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                  </svg>
+                            </a>
+                        </li>
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Yash Pathak <span id="year"></span></span> 
+                    </p>
+                </div>
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-
+<script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+    let date=new Date()
+    let currentyear=date.getFullYear()
+    document.querySelector('#year').innerHTML=currentyear
+</script>
 </html>
